@@ -16,4 +16,5 @@ cask "ghostty" do
   depends_on macos: ">= :monterey"
 
   app "Ghostty.app"
+  binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
 end
