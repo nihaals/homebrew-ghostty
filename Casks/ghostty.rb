@@ -21,4 +21,13 @@ cask "ghostty" do
          target: "#{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/ghostty.fish"
   manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man1/ghostty.1"
   manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man5/ghostty.5"
+
+  zap trash: [
+    "~/.config/ghostty",
+    "~/Library/Caches/com.mitchellh.ghostty",
+    "~/Library/HTTPStorages/com.mitchellh.ghostty",
+    "~/Library/Preferences/com.mitchellh.ghostty.plist",
+    "~/Library/Saved Application State/com.mitchellh.ghostty.savedState",
+    "~/Library/WebKit/com.mitchellh.ghostty",
+  ]
 end
